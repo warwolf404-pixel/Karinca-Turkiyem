@@ -4524,4 +4524,4 @@ export const antSpecies = [
     "name": "Myrmica rugulosa",
     "latinName": "Myrmica rugulosa",
     "description": "Avrasya'da yaygın olan, **iğneli (sokucu)** bir türdür. Adı **'hafif p böle şuanda"**
-  }
+  },
