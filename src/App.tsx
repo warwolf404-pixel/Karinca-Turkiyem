@@ -115,4 +115,51 @@ function App() {
                       <p className="text-gray-700">{selectedSpecies.behavior}</p>
                       <div className="flex items-center mt-2">
                         <Crown className="w-4 h-4 text-yellow-600 mr-1" />
-                        <span className="text-sm text-gray-700"><strong>Kolon
+                        <span className="text-sm text-gray-700"><strong>Koloni yapısı:</strong> {selectedSpecies.colonyStructure || 'Tek kraliçeli'}</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Bakım Bilgileri */}
+                <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
+                  <h4 className="font-bold text-yellow-800 mb-2">📝 Bakım Notları</h4>
+                  <p className="text-yellow-700 text-sm">
+                    <strong>Zorluk seviyesi:</strong> {selectedSpecies.difficulty || 'Orta seviye'} | 
+                    <strong> Sıcaklık:</strong> {selectedSpecies.temperature || '22-28°C'} | 
+                    <strong> Nem:</strong> {selectedSpecies.humidity || '50-70%'}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Tür Listesi */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {filteredSpecies.map((species) => (
+            <div 
+              key={species.id} 
+              className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow cursor-pointer border border-gray-200"
+              onClick={() => setSelectedSpecies(species)}
+            >
+              <h3 className="text-lg font-bold text-gray-900">{species.name}</h3>
+              <p className="text-gray-600 italic">{species.latinName}</p>
+              <p className="text-sm text-gray-500 mt-2">{species.habitat}</p>
+              <div className="mt-3 flex flex-wrap gap-1">
+                <span className="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">📏 {species.size.split(',')[0]}</span>
+                <span className="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">🍽️ {species.nutrition.split(' - ')[0]}</span>
+              </div>
+              <div className="mt-3 flex items-center text-sm text-gray-500">
+                <Info className="w-4 h-4 mr-1" />
+                Detayları görmek için tıkla
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default App;
