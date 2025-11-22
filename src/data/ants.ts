@@ -379,3 +379,4 @@ export const antSpecies = [
     difficulty: "Orta seviye - Akdeniz iklimi gerektirir",
     specialNotes: "Schmitz'ün onuruna adlandırılmış. Akdeniz ekosisteminin tipik türü."
   }
+];
