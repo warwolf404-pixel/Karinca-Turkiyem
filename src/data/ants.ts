@@ -1235,4 +1235,43 @@ export const antSpecies = [
     "difficulty": "İleri seviye - dağ iklimi ve kayalık yuva gerektirir",
     "specialNotes": "Zagros Dağları'na özgü endemik tür. Sarp kayalıklarda hareket konusunda uzman."
   }
+  [
+  {
+    "id": 66,
+    "name": "Camponotus tergestinus", 
+    "latinName": "Camponotus tergestinus",
+    "description": "Trieste körfezinden (antik Tergeste) ismini alan bu Akdeniz karınca türü, İtalya'nın kuzeydoğusu ve Balkanlar'ın batı kıyılarında yayılım gösterir. Camponotus tergestinus, orta boyutlu olup, parlak siyah renkli gövdesi ve karakteristik kırmızımsı toraksı ile dikkat çeker. Özellikle kireçtaşı yamaçlarında ve kıyı makiliklerinde yaşamını sürdürür. Yuvalama stratejisi oldukça çeşitlidir; hem kaya çatlaklarını hem de ağaç gövdelerini kullanabilirler. Koloni yapısı monogyn olup, kraliçe 10-12 yıl arasında yaşayabilir. İşçi bireyler arasında belirgin bir polimorfizm gözlemlenir ve büyük majörler özellikle sert kabuklu besinleri işlemede uzmanlaşmıştır. Gündüz aktif olan bu tür, Akdeniz ikliminin sıcak yaz aylarında besin arama aktivitelerini sabah erken ve akşamüstü saatlerine kaydırır. Beslenme ekoloji oldukça geniştir; böcekler, nektar, meyve ve bitki özsuyu ile beslenirler. Özellikle kıyı bölgelerinde tuz toleransı geliştirmişlerdir ve deniz spray'ine maruz kalan bitkilerin özsuyunu tüketebilirler. Savunma mekanizması olarak formik asit püskürtebilirler ve yuvalarına yaklaşan tehditlere karşı hızlı tepki verirler. Bu tür, kıyı ekosistemlerinde tohum dağılımı ve böcek popülasyon kontrolünde önemli rol oynar.",
+    "habitat": "Kıyı makilikleri, kireçtaşı yamaçları, zeytin bahçeleri, kıyı ormanları",
+    "size": "İşçi: 6-9 mm, Majör: 11-13 mm, Kraliçe: 14-16 mm, Erkek: 10-12 mm",
+    "nutrition": "Omnivor - böcekler, nektar, meyve, bitki özsuyu, kıyı bitkileri",
+    "behavior": "Gündüz aktif, polimorfik, sosyal, tuz toleranslı, hızlı tepkili",
+    "colonyStructure": "Tek kraliçeli, 600-2000 işçili orta büyüklükte koloniler",
+    "nestType": "Kaya çatlakları, ağaç gövdeleri, taş altları, toprak galerileri",
+    "color": "Parlak siyah, kırmızımsı toraks, kontrast renkler",
+    "workerCount": "600-2000 işçi",
+    "preferredFood": "Nektar, böcekler, meyve, bitki özsuyu, kıyı bitkileri",
+    "temperature": "18-28°C",
+    "humidity": "45-65%",
+    "difficulty": "Orta seviye - Akdeniz iklimi gerektirir",
+    "specialNotes": "Kıyı ekosistemine adapte olmuş. Tuz toleransı gelişmiş."
+  },
+  {
+    "id": 67,
+    "name": "Camponotus thoracicus",
+    "latinName": "Camponotus thoracicus", 
+    "description": "Göğüs bölgesinin karakteristik yapısıyla tanınan bu karınca türü, Afrika'nın tropikal ve subtropikal bölgelerinde yayılım gösterir. Camponotus thoracicus, iri yapılı ve güçlü fiziksel özelliklere sahip olup, koyu siyah renkli gövdesi ve geniş toraksı ile dikkat çeker. Özellikle savana ormanları ve galeri ormanlarında yaşamını sürdürür. Yuvalarını genellikle ağaç gövdelerinde ve kütüklerde oyarak oluştururlar, bazen toprak altı galerileri de kazarlar. Koloni yapısı monogyn olup, kraliçe 12-15 yıl arasında yaşayabilir. İşçi bireyler arasında belirgin bir polimorfizm gözlemlenir ve büyük majörler özellikle savunma ve büyük besin parçalarının taşınmasından sorumludur. Gece aktif olan bu tür, tropikal bölgelerin sıcak gecelerinde daha aktiftir. Beslenme stratejileri oldukça çeşitlidir; böcekler, nektar, meyve ve bitki özsuyu ile beslenirler. Özellikle ağaç bitleri ve diğer homoptera'larla mutualistik ilişkiler geliştirmişlerdir. Savunma mekanizması olarak güçlü mandibulalarını kullanırlar ve formik asit püskürtebilirler. Bu tür, tropikal ekosistemlerde tohum dağılımı ve böcek popülasyon kontrolünde önemli rol oynar.",
+    "habitat": "Savana ormanları, galeri ormanları, tropikal orman kenarları, ağaçlık alanlar",
+    "size": "İşçi: 8-11 mm, Majör: 13-16 mm, Kraliçe: 17-20 mm, Erkek: 12-14 mm",
+    "nutrition": "Omnivor - böcekler, nektar, meyve, bitki özsuyu, homoptera salgıları",
+    "behavior": "Gece aktif, polimorfik, sosyal, mutualistik ilişkiler",
+    "colonyStructure": "Tek kraliçeli, 1000-4000 işçili büyük koloniler",
+    "nestType": "Ağaç gövdeleri, kütükler, odunsu materyaller, toprak galerileri",
+    "color": "Koyu siyah, geniş toraks, parlak yüzey",
+    "workerCount": "1000-4000 işçi",
+    "preferredFood": "Böcekler, nektar, meyve, homoptera salgıları, bal",
+    "temperature": "22-32°C",
+    "humidity": "50-70%",
+    "difficulty": "Orta seviye - tropikal iklim ve odunsu yuva gerektirir",
+    "specialNotes": "Tropikal bölgelere adapte olmuş. Geniş toraks yapısı karakteristik."
+  }
 ];
