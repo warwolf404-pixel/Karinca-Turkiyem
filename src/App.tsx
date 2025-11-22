@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Search, Antenna } from 'lucide-react';
+import { Search, Antenna, X, Info } from 'lucide-react';
 import { antSpecies } from './data/ants';
 
 function App() {
@@ -38,6 +38,54 @@ function App() {
           />
         </div>
 
+        {/* Detay Modal */}
+        {selectedSpecies && (
+          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
+            <div className="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+              <div className="p-6">
+                <div className="flex justify-between items-start mb-4">
+                  <div>
+                    <h2 className="text-2xl font-bold text-gray-900">{selectedSpecies.name}</h2>
+                    <p className="text-gray-600 italic">{selectedSpecies.latinName}</p>
+                  </div>
+                  <button 
+                    onClick={() => setSelectedSpecies(null)}
+                    className="text-gray-400 hover:text-gray-600"
+                  >
+                    <X className="w-6 h-6" />
+                  </button>
+                </div>
+
+                {/* Açıklama */}
+                <div className="mb-4">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">Açıklama</h3>
+                  <p className="text-gray-700">{selectedSpecies.description}</p>
+                </div>
+
+                {/* Diğer Bilgiler */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div>
+                    <h4 className="font-semibold text-gray-900">Yaşam Alanı</h4>
+                    <p className="text-gray-600">{selectedSpecies.habitat}</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900">Boyut</h4>
+                    <p className="text-gray-600">{selectedSpecies.size}</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900">Beslenme</h4>
+                    <p className="text-gray-600">{selectedSpecies.nutrition}</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900">Davranış</h4>
+                    <p className="text-gray-600">{selectedSpecies.behavior}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
         {/* Tür Listesi */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredSpecies.map((species) => (
@@ -52,6 +100,10 @@ function App() {
               <div className="mt-3 flex flex-wrap gap-1">
                 <span className="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">Boy: {species.size}</span>
                 <span className="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">{species.nutrition}</span>
+              </div>
+              <div className="mt-3 flex items-center text-sm text-gray-500">
+                <Info className="w-4 h-4 mr-1" />
+                Açıklamayı görmek için tıkla
               </div>
             </div>
           ))}
