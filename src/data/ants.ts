@@ -1639,5 +1639,4 @@ export const antSpecies = [
     "humidity": "40-60%",
     "difficulty": "Kolay - Kurakçıl ortam gereklidir. Kış uykusu (diyapoz) gereklidir.",
     "specialNotes": "Orta Asya'nın zorlu iklim koşullarına adapte olmuştur."
-  }
     ];
