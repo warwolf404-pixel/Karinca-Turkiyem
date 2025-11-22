@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Search, Antenna, X, Info } from 'lucide-react';
+import { Search, Antenna, X, Info, Ruler, Home, Utensils, Activity, Users, Crown } from 'lucide-react';
 import { antSpecies } from './data/ants';
 
 function App() {
@@ -41,76 +41,78 @@ function App() {
         {/* Detay Modal */}
         {selectedSpecies && (
           <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
-            <div className="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+            <div className="bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto">
               <div className="p-6">
-                <div className="flex justify-between items-start mb-4">
+                <div className="flex justify-between items-start mb-6">
                   <div>
-                    <h2 className="text-2xl font-bold text-gray-900">{selectedSpecies.name}</h2>
-                    <p className="text-gray-600 italic">{selectedSpecies.latinName}</p>
+                    <h2 className="text-3xl font-bold text-gray-900">{selectedSpecies.name}</h2>
+                    <p className="text-xl text-gray-600 italic mb-2">{selectedSpecies.latinName}</p>
+                    <div className="w-20 h-1 bg-gradient-to-r from-green-500 to-amber-500 rounded-full"></div>
                   </div>
                   <button 
                     onClick={() => setSelectedSpecies(null)}
-                    className="text-gray-400 hover:text-gray-600"
+                    className="text-gray-400 hover:text-gray-600 transition-colors"
                   >
                     <X className="w-6 h-6" />
                   </button>
                 </div>
 
+                {/* Görsel Alanı - Placeholder */}
+                <div className="mb-6 bg-gradient-to-br from-green-100 to-amber-100 rounded-lg h-48 flex items-center justify-center">
+                  <div className="text-center text-gray-600">
+                    <Antenna className="w-16 h-16 mx-auto mb-2 text-green-500" />
+                    <p className="text-sm">{selectedSpecies.name} görseli</p>
+                    <p className="text-xs text-gray-500">(Sonra gerçek görseller eklenecek)</p>
+                  </div>
+                </div>
+
                 {/* Açıklama */}
-                <div className="mb-4">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">Açıklama</h3>
-                  <p className="text-gray-700">{selectedSpecies.description}</p>
+                <div className="mb-6">
+                  <h3 className="text-xl font-bold text-gray-900 mb-3 border-b pb-2">Tür Hakkında Detaylı Bilgi</h3>
+                  <p className="text-gray-700 text-lg leading-relaxed">{selectedSpecies.description}</p>
                 </div>
 
-                {/* Diğer Bilgiler */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div>
-                    <h4 className="font-semibold text-gray-900">Yaşam Alanı</h4>
-                    <p className="text-gray-600">{selectedSpecies.habitat}</p>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900">Boyut</h4>
-                    <p className="text-gray-600">{selectedSpecies.size}</p>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900">Beslenme</h4>
-                    <p className="text-gray-600">{selectedSpecies.nutrition}</p>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900">Davranış</h4>
-                    <p className="text-gray-600">{selectedSpecies.behavior}</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        )}
+                {/* Detaylı Bilgiler Grid */}
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+                  {/* Sol Kolon */}
+                  <div className="space-y-4">
+                    <div className="bg-gray-50 rounded-lg p-4">
+                      <div className="flex items-center mb-2">
+                        <Home className="w-5 h-5 text-green-600 mr-2" />
+                        <h4 className="font-bold text-gray-900">Yaşam Alanı & Habitat</h4>
+                      </div>
+                      <p className="text-gray-700">{selectedSpecies.habitat}</p>
+                      <p className="text-sm text-gray-500 mt-1">Yuva tipi: {selectedSpecies.nestType || 'Toprak altı/Ağaç içi'}</p>
+                    </div>
 
-        {/* Tür Listesi */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredSpecies.map((species) => (
-            <div 
-              key={species.id} 
-              className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow cursor-pointer"
-              onClick={() => setSelectedSpecies(species)}
-            >
-              <h3 className="text-lg font-bold text-gray-900">{species.name}</h3>
-              <p className="text-gray-600 italic">{species.latinName}</p>
-              <p className="text-sm text-gray-500 mt-2">{species.habitat}</p>
-              <div className="mt-3 flex flex-wrap gap-1">
-                <span className="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">Boy: {species.size}</span>
-                <span className="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">{species.nutrition}</span>
-              </div>
-              <div className="mt-3 flex items-center text-sm text-gray-500">
-                <Info className="w-4 h-4 mr-1" />
-                Açıklamayı görmek için tıkla
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-}
+                    <div className="bg-gray-50 rounded-lg p-4">
+                      <div className="flex items-center mb-2">
+                        <Ruler className="w-5 h-5 text-blue-600 mr-2" />
+                        <h4 className="font-bold text-gray-900">Fiziksel Özellikler</h4>
+                      </div>
+                      <p className="text-gray-700"><strong>Boyut:</strong> {selectedSpecies.size}</p>
+                      <p className="text-gray-700"><strong>Renk:</strong> {selectedSpecies.color || 'Türe özgü renkler'}</p>
+                      <p className="text-gray-700"><strong>İşçi sayısı:</strong> {selectedSpecies.workerCount || '50-5000 arası'}</p>
+                    </div>
+                  </div>
 
-export default App;
+                  {/* Sağ Kolon */}
+                  <div className="space-y-4">
+                    <div className="bg-gray-50 rounded-lg p-4">
+                      <div className="flex items-center mb-2">
+                        <Utensils className="w-5 h-5 text-amber-600 mr-2" />
+                        <h4 className="font-bold text-gray-900">Beslenme Alışkanlıkları</h4>
+                      </div>
+                      <p className="text-gray-700">{selectedSpecies.nutrition}</p>
+                      <p className="text-sm text-gray-500 mt-1">Tercih ettiği besinler: {selectedSpecies.preferredFood || 'Böcekler, tohumlar, nektar'}</p>
+                    </div>
+
+                    <div className="bg-gray-50 rounded-lg p-4">
+                      <div className="flex items-center mb-2">
+                        <Activity className="w-5 h-5 text-purple-600 mr-2" />
+                        <h4 className="font-bold text-gray-900">Davranış & Koloni Yapısı</h4>
+                      </div>
+                      <p className="text-gray-700">{selectedSpecies.behavior}</p>
+                      <div className="flex items-center mt-2">
+                        <Crown className="w-4 h-4 text-yellow-600 mr-1" />
+                        <span className="text-sm text-gray-700"><strong>Kolon
