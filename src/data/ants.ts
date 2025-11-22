@@ -437,7 +437,6 @@ export const antSpecies = [
     difficulty: "Orta seviye - standart bakım gerektirir",
     specialNotes: "Kaburgalı vücut yapısı ile karakteristik. Morfolojik olarak ilginç."
   },
-  ,
   {
     id: 24,
     name: "Aphaenogaster Subterranea",
@@ -532,8 +531,7 @@ export const antSpecies = [
     humidity: "55-75%",
     difficulty: "Başlangıç seviyesi - küçük ve uyumlu",
     specialNotes: "Küçük boyutlu ve sakin bir tür. Yeni başlayanlar için ideal."
-  }
-,
+  },
   {
     id: 29,
     name: "Bothriomyrmex Corsicus",
@@ -723,8 +721,7 @@ export const antSpecies = [
     humidity: "45-65%",
     difficulty: "Orta seviye - dağ iklimi gerektirir",
     specialNotes: "Kafkas dağlarına özgü. Dağlık bölgelere adapte olmuş."
-  }
-  [
+  },
   {
     "id": 39,
     "name": "Camponotus cilicicus",
@@ -914,8 +911,7 @@ export const antSpecies = [
     "humidity": "45-65%",
     "difficulty": "Orta seviye - dağ iklimi gerektirir",
     "specialNotes": "Türkiye'ye özgü endemik tür. Honaz Dağı bölgesine özgüdür."
-  }
-[
+  },
   {
     "id": 49,
     "name": "Camponotus ionius",
@@ -953,8 +949,7 @@ export const antSpecies = [
     "humidity": "40-60%",
     "difficulty": "Orta seviye - kuru ve sıcak ortam gerektirir",
     "specialNotes": "Türkiye'ye özgü endemik tür. Kalkerli arazilerde yayılım gösterir."
-  }
-[
+  },
   {
     "id": 51,
     "name": "Camponotus kiesenwetteri",
@@ -1049,8 +1044,7 @@ export const antSpecies = [
     "humidity": "50-70%",
     "difficulty": "İleri seviye - büyük alan ve odunsu yuva gerektirir",
     "specialNotes": "Avrupa'nın en büyük karınca türlerinden biri. Ahşap oyma konusunda uzman."
-  }
-[
+  },
   {
     "id": 56,
     "name": "Camponotus oasium",
@@ -1145,8 +1139,7 @@ export const antSpecies = [
     "humidity": "40-60%",
     "difficulty": "İleri seviye - soğuk dağ iklimi gerektirir",
     "specialNotes": "Yüksek rakımlara adapte olmuş endemik tür. Soğuğa aşırı dayanıklı."
-  }
-[
+  },
   {
     "id": 61,
     "name": "Camponotus ruseni",
