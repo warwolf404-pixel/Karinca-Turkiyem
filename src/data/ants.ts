@@ -4518,9 +4518,10 @@ export const antSpecies = [
     "humidity": "60-80%",
     "difficulty": "Orta - Sokma riski, nemli ortam gereksinimi. Kış uykusu (diyapoz) zorunludur.",
     "specialNotes": "Pürüzlü düğümlü yapısı morfolojik olarak ayırt edicidir."
-  },
+ },
   {
     "id": 234,
     "name": "Myrmica rugulosa",
     "latinName": "Myrmica rugulosa",
-    "description": "Avrasya'da yaygın olan, **iğneli (sokucu)** bir türdür. Adı **'hafif p
+    "description": "Avrasya'da yaygın olan, **iğneli (sokucu)** bir türdür. Adı **'hafif p böle şuanda"**
+  }
