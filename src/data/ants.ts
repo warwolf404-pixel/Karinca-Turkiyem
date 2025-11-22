@@ -1273,5 +1273,4 @@ export const antSpecies = [
     "humidity": "50-70%",
     "difficulty": "Orta seviye - tropikal iklim ve odunsu yuva gerektirir",
     "specialNotes": "Tropikal bölgelere adapte olmuş. Geniş toraks yapısı karakteristik."
-  }
 ];
