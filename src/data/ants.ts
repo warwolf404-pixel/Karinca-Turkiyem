@@ -1242,4 +1242,4 @@ export const antSpecies = [
     "difficulty": "İleri seviye - dağ iklimi ve kayalık yuva gerektirir",
     "specialNotes": "Zagros Dağları'na özgü endemik tür. Sarp kayalıklarda hareket konusunda uzman."
   }
-]
+];
