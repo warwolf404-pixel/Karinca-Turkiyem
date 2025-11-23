@@ -4519,11 +4519,25 @@ export const antSpecies = [
     "difficulty": "Orta - Sokma riski, nemli ortam gereksinimi. Kış uykusu (diyapoz) zorunludur.",
     "specialNotes": "Pürüzlü düğümlü yapısı morfolojik olarak ayırt edicidir."
 },
-  {
-    "id": 234,
-    "name": "Myrmica rugulosa",
-    "latinName": "Myrmica rugulosa",
-    "description": "Avrasya'da yaygın olan, **iğneli (sokucu)** bir türdür. Adı **'hafif p böle şuanda"**
+{
+  id: 232,
+  name: "Myrmica Rugulosa",
+  latinName: "Myrmica rugulosa",
+  description: "Avrupa ve Asya'nın ılıman bölgelerinde yaygın olarak bulunan, **'kırışık yüzeyli' (rugulosa)** anlamına gelen, **iğneli (sokucu)** bir karınca türüdür. Göğüs kısmındaki belirgin kırışık yüzey yapısı ve uzun, kıvrık iğnesi ile tanınır. **Koyu kırmızımsı kahverengi** renkte, orta büyüklükte ve güçlü yapılı bir türdür. Yuvalarını genellikle nemli orman tabanlarına, çürüyen odun altlarına veya taşlık alanlara yaparlar. **Monogyn ve poligyn** koloni yapıları görülebilir. **Karnivor ve Honeydew toplayıcısı** olarak beslenirler. Soğuk ve nemli iklimlere oldukça iyi adapte olmuşlardır. Göğüs bölgesindeki rugoz (kırışık) yüzey en ayırt edici morfolojik özelliğidir.",
+  habitat: "Nemli orman tabanları, çürüyen odun altları, taşlık araziler, çayırlık alanlar, yaprak döküntüleri",
+  size: "İşçi: 4-6 mm, Kraliçe: 7-9 mm, Erkek: 5-7 mm",
+  nutrition: "Omnivor/Karnivor - Böcekler, arthropodlar, Honeydew, meyve suları, nektar",
+  behavior: "Orta derecede agresif, sokucu (iğneli), gece ve gündüz aktif, hızlı hareket eden, iyi avcı",
+  colonyStructure: "Monogyn veya poligyn, 1.000-5.000 işçili koloniler",
+  nestType: "Toprak altı yuvaları, çürüyen odun içi, taş altları, yosunlu zeminler",
+  color: "Koyu kırmızımsı kahverengi, parlak, koyu renkli abdomen",
+  workerCount: "1.000-5.000 işçi",
+  preferredFood: "Protein kaynakları (böcekler), şekerli çözeltiler, Honeydew, meyve parçaları",
+  temperature: "18-26°C",
+  humidity: "50-70%",
+  difficulty: "Orta - Sokma riski, nem kontrolü gerektirir. Kış uykusu (diyapoz) zorunludur.",
+  specialNotes: "Göğüs bölgesindeki belirgin kırışık yüzey yapısı ile kolayca tanınır. Soğuğa dayanıklı, nemli ortam seven bir türdür. İğnesi acılı sokmaya neden olabilir."
+},
 {
     "id": 235,
     "name": "Myrmica sabuleti",
