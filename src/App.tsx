@@ -11,24 +11,25 @@ function App() {
     species.latinName.toLowerCase().includes(search.toLowerCase())
   );
 
-return (
-  <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-amber-50 to-green-50">
-    {/* Header */}
-    <header className="bg-white/80 backdrop-blur-sm shadow-sm border-b border-emerald-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center">
-  <div className="flex-shrink-0">  {/* Logo container */}
-    <img 
-      src="/logo.png" 
-      alt="Karınca Türkiyem" 
-      className="h-24 w-24 object-contain"  // İSTEDİĞİN KADAR BÜYÜT
-    />
-  </div>
-  <h1 className="text-2xl font-bold text-emerald-800 ml-4">Karınca Türkiyem</h1>
-</div>
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-amber-50 to-green-50">
+      {/* Header */}
+      <header className="bg-white/80 backdrop-blur-sm shadow-sm border-b border-emerald-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-16">
+            <div className="flex items-center">
+              <div className="flex-shrink-0">
+                <img 
+                  src="/logo.png" 
+                  alt="Karınca Türkiyem" 
+                  className="h-24 w-24 object-contain"
+                />
+              </div>
+              <h1 className="text-2xl font-bold text-emerald-800 ml-4">Karınca Türkiyem</h1>
+            </div>
+          </div>
         </div>
-      </div>
-    </header>
+      </header>
 
       {/* Arama ve İçerik */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -63,23 +64,24 @@ return (
                 </div>
 
                 {/* Görsel Alanı */}
-{selectedSpecies.image ? (
-  <div className="mb-6">
-    <img 
-      src={selectedSpecies.image} 
-      alt={selectedSpecies.name}
-      className="w-full h-126 object-cover rounded-lg shadow-md"
-    />
-  </div>
-) : (
-  <div className="mb-6 bg-gradient-to-br from-green-100 to-amber-100 rounded-lg h-48 flex items-center justify-center">
-    <div className="text-center text-gray-600">
-      <Antenna className="w-16 h-16 mx-auto mb-2 text-green-500" />
-      <p className="text-sm">{selectedSpecies.name} görseli</p>
-      <p className="text-xs text-gray-500">(Görsel henüz eklenmedi)</p>
-    </div>
-  </div>
-)}
+                {selectedSpecies.image ? (
+                  <div className="mb-6">
+                    <img 
+                      src={selectedSpecies.image} 
+                      alt={selectedSpecies.name}
+                      className="w-full h-64 object-cover rounded-lg shadow-md"  // h-126 → h-64
+                    />
+                  </div>
+                ) : (
+                  <div className="mb-6 bg-gradient-to-br from-green-100 to-amber-100 rounded-lg h-48 flex items-center justify-center">
+                    <div className="text-center text-gray-600">
+                      <Antenna className="w-16 h-16 mx-auto mb-2 text-green-500" />
+                      <p className="text-sm">{selectedSpecies.name} görseli</p>
+                      <p className="text-xs text-gray-500">(Görsel henüz eklenmedi)</p>
+                    </div>
+                  </div>
+                )}
+
                 {/* Açıklama */}
                 <div className="mb-6">
                   <h3 className="text-xl font-bold text-gray-900 mb-3 border-b pb-2">Tür Hakkında Detaylı Bilgi</h3>
@@ -149,7 +151,7 @@ return (
           </div>
         )}
 
-         {/* Tür Listesi */}
+        {/* Tür Listesi */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredSpecies.map((species) => (
             <div 
