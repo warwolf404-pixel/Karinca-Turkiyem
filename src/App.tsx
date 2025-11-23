@@ -63,7 +63,7 @@ function App() {
     <img 
       src={selectedSpecies.image} 
       alt={selectedSpecies.name}
-      className="w-full h-96 object-cover rounded-lg shadow-md"
+      className="w-full h-126 object-cover rounded-lg shadow-md"
     />
   </div>
 ) : (
