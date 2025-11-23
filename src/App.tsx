@@ -21,7 +21,7 @@ function App() {
               <img 
                 src="/logo.png" 
                 alt="Karınca Türkiyem" 
-                className="h-40 w-40 object-contain mr-3"  {/* DÜZELTİLDİ: h-40 w-40 */}
+                className="h-40 w-40 object-contain mr-3"
               />
               <h1 className="text-2xl font-bold text-emerald-800">Karınca Türkiyem</h1>
             </div>
