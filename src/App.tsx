@@ -144,31 +144,33 @@ function App() {
           </div>
         )}
 
-        {/* Tür Listesi */}
+         {/* Tür Listesi */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredSpecies.map((species) => (
             <div 
-  key={species.id} 
-  className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow cursor-pointer border border-gray-200"
-  onClick={() => setSelectedSpecies(species)}
->
-  {species.image && (
-    <img 
-      src={species.image} 
-      alt={species.name}
-      className="w-full h-32 object-cover"
-    />
-  )}
-  <div className="p-4">
-    <h3 className="text-lg font-bold text-gray-900">{species.name}</h3>
-    <p className="text-gray-600 italic">{species.latinName}</p>
-              <div className="mt-3 flex flex-wrap gap-1">
-                <span className="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">📏 {species.size.split(',')[0]}</span>
-                <span className="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">🍽️ {species.nutrition.split(' - ')[0]}</span>
-              </div>
-              <div className="mt-3 flex items-center text-sm text-gray-500">
-                <Info className="w-4 h-4 mr-1" />
-                Detayları görmek için tıkla
+              key={species.id} 
+              className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow cursor-pointer border border-gray-200"
+              onClick={() => setSelectedSpecies(species)}
+            >
+              {species.image && (
+                <img 
+                  src={species.image} 
+                  alt={species.name}
+                  className="w-full h-32 object-cover"
+                />
+              )}
+              <div className="p-4">
+                <h3 className="text-lg font-bold text-gray-900">{species.name}</h3>
+                <p className="text-gray-600 italic">{species.latinName}</p>
+                <p className="text-sm text-gray-500 mt-2">{species.habitat}</p>
+                <div className="mt-3 flex flex-wrap gap-1">
+                  <span className="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">📏 {species.size.split(',')[0]}</span>
+                  <span className="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">🍽️ {species.nutrition.split(' - ')[0]}</span>
+                </div>
+                <div className="mt-3 flex items-center text-sm text-gray-500">
+                  <Info className="w-4 h-4 mr-1" />
+                  Detayları görmek için tıkla
+                </div>
               </div>
             </div>
           ))}
