@@ -7350,7 +7350,7 @@ export const antSpecies = [
     "humidity": "30-50%",
     "difficulty": "Orta - Yüksek sıcaklık gereksinimi.",
     "specialNotes": "Yarı çöl ortamına adapte olmuş türdür."
-   },
+  },
   {
     "id": 382,
     "name": "Trichomyrmex perplexus",
@@ -7370,4 +7370,4 @@ export const antSpecies = [
     "difficulty": "Orta.",
     "specialNotes": "Taksonomik olarak ayrımı zor olan bir türdür."
   }
-];
+]   // <- SADECE BUNU YAZIN, ; YOK!
