@@ -43,7 +43,7 @@ export const antSpecies = [
     id: 3, 
     name: "Aphaenogaster Balcanica",
     latinName: "Aphaenogaster balcanica",
-    image:"",
+    image:"https://inaturalist-open-data.s3.amazonaws.com/photos/466147232/original.jpg",
     description: "Balkan bölgesine özgü bu dayanıklı tür, kuru ve sıcak habitatları tercih eder. Yuvalarını genellikle taş altlarına veya toprak içine yaparlar. Orta boyutlu olan bu karıncalar, hem etçil hem de otçul beslenirler. Koloni yapıları oldukça organize olup, iş bölümü gelişmiştir. Kuraklığa dayanıklı olmaları nedeniyle yaz aylarında da aktif kalabilirler. Yuva girişlerinde karakteristik toprak kraterleri oluştururlar.",
     habitat: "Kuru çayırlar, kayalık alanlar, step bölgeleri, dağ etekleri, taşlık araziler",
     size: "İşçi: 6-8 mm, Kraliçe: 9-11 mm, Erkek: 7-9 mm",
