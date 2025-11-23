@@ -63,7 +63,7 @@ export const antSpecies = [
     id: 4,
     name: "Aphaenogaster Burri", 
     latinName: "Aphaenogaster burri",
-    image:"",
+    image:"https://www.antwiki.org/w/images/thumb/3/30/Aphaenogaster_burri_casent0900459_p_1_high.jpg/200px-Aphaenogaster_burri_casent0900459_p_1_high.jpg",
     description: "Küçük ama etkili koloniler halinde yaşayan bu tür, özellikle çürümüş odunlar ve ağaç kütükleri içinde yuvalanmayı tercih eder. Ormanlık alanlarda yaygın olarak bulunur. Beslenme alışkanlıkları omnivor olup, küçük böcekler ve organik materyallerle beslenirler. Yuvalarını genellikle ölü ağaç gövdelerinde oluştururlar ve odun liflerini ustalıkla işlerler. Sakin yapılı olmaları nedeniyle gözlemlenmesi nispeten zordur.",
     habitat: "Ormanlar, çürümüş odunlar, ölü ağaç kütükleri, yaprak yığınları, nemli orman tabanı",
     size: "İşçi: 4-6 mm, Kraliçe: 7-8 mm, Erkek: 5-6 mm",
