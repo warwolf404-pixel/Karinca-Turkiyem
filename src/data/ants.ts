@@ -23,7 +23,7 @@ export const antSpecies = [
     id: 2,
     name: "Aphaenogaster Aktaci",
     latinName: "Aphaenogaster aktaci",
-    image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCw5PPvn8_jOeeISyXuURD525wIi_tiOx6gNiDRphvMgsbAbiS-CAeAuZGo9_Lvq5Nni8&usqp=CAU",
+    image:"https://www.researchgate.net/publication/352834835/figure/fig2/AS:1040254412795905@1625027387694/Figures-3-4-Aphaenogaster-aktaci-gyne-specimen-from-Greece-Lesbos-Ligona-Valley.png",
     description: "Türkiye'ye özgü endemik bu değerli tür, orman ekosistemlerinde tohum dağılımı konusunda kritik rol oynar. Orman tabanında aktif olarak dolaşır ve küçük omurgasızlar, tohumlar ve nektarla beslenir. Sosyal yapıları oldukça gelişmiş olup, karmaşık 3-5 metre derinliğe kadar inen yuva sistemleri kurabilirler. Bu tür özellikle meşe ormanlarında sıkça görülür ve ekosistemin sağlıklı işleyişi için hayati öneme sahiptir. Tohumları taşıyarak bitki çeşitliliğinin korunmasına katkıda bulunurlar.",
     habitat: "Ormanlık alanlar, meşe ormanları, makilikler, koruluklar, yaprak döküntülü zeminler",
     size: "İşçi: 5-7 mm, Kraliçe: 8-10 mm, Erkek: 6-8 mm",
