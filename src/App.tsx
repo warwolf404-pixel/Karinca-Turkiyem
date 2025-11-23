@@ -15,15 +15,17 @@ function App() {
   <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-amber-50 to-green-50">
       {/* Header */}
       <header className="bg-white/80 backdrop-blur-sm shadow-sm border-b border-emerald-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
-            <div className="flex items-center">
-              <Antenna className="w-8 h-8 text-green-600 mr-3" />
-              <h1 className="text-2xl font-bold text-gray-900">Karınca Türkiyem</h1>
-            </div>
-          </div>
-        </div>
-      </header>
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="flex items-center justify-between h-16">
+      <div className="flex items-center">
+        {/* ⬇️ BURASI ⬇️ */}
+        <Antenna className="w-8 h-8 text-green-600 mr-3" />
+        <h1 className="text-2xl font-bold text-gray-900">Karınca Türkiyem</h1>
+        {/* ⬆️ BURASI ⬆️ */}
+      </div>
+    </div>
+  </div>
+</header>
 
       {/* Arama ve İçerik */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
