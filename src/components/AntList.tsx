@@ -11,7 +11,7 @@ export function AntList() {
               <img 
                 src={ant.image} 
                 alt={ant.name}
-                className="w-full h-32 object-cover rounded-lg mb-2"
+                className="w-full h-40 object-cover rounded-lg mb-2"
               />
             )}
             <h3 className="text-lg font-semibold">{ant.name}</h3>
