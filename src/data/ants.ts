@@ -181,7 +181,7 @@ export const antSpecies = [
     behavior: "Tohum toplayıcı, depocu, gündüz aktif, sosyal, yuva savunmacısı",
     colonyStructure: "Tek kraliçeli, 3000-10000 işçili büyük koloniler",
     nestType: "Derin toprak yuvaları, tohum depoları, kumlu zeminler",
-    color: "Koyu kahverengi-siyah, büyük başlı, güçlü çeneli",
+    color: "Koyu kahverengi-siyah, büyük başlı, güçlü çeneli",    
     workerCount: "3000-10000 işçi",
     preferredFood: "Çeşitli tohumlar, buğday, arpa, yulaf, böcekler, bal",
     temperature: "20-32°C",
