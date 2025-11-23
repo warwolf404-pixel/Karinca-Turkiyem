@@ -16,14 +16,15 @@ return (
     {/* Header */}
     <header className="bg-white/80 backdrop-blur-sm shadow-sm border-b border-emerald-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          <div className="flex items-center">
-  <img 
-    src="/logo.png" 
-    alt="Karınca Türkiyem" 
-    className="h-24 w-24 object-contain mr-4"
-  />
-  <h1 className="text-2xl font-bold text-emerald-800">Karınca Türkiyem</h1>
+        <div className="flex items-center">
+  <div className="flex-shrink-0">  {/* Logo container */}
+    <img 
+      src="/logo.png" 
+      alt="Karınca Türkiyem" 
+      className="h-24 w-24 object-contain"  // İSTEDİĞİN KADAR BÜYÜT
+    />
+  </div>
+  <h1 className="text-2xl font-bold text-emerald-800 ml-4">Karınca Türkiyem</h1>
 </div>
         </div>
       </div>
