@@ -20,10 +20,8 @@ function App() {
       <div className="flex items-center">
         {/* ⬇️ BURASI ⬇️ */}
         <div className="relative">
-  <div className="w-8 h-8 bg-emerald-600 rounded-full"></div>
-  <div className="absolute -top-1 -left-1 w-3 h-4 bg-emerald-700 rounded-full"></div>
-  <div className="absolute -top-1 -right-1 w-3 h-4 bg-emerald-700 rounded-full"></div>
-</div>
+ <img src="/logo.png" alt="Karınca Türkiyem" className="h-10 w-10 mr-3" />
+<h1 className="text-2xl font-bold text-emerald-800">Karınca Türkiyem</h1>
 <h1 className="text-2xl font-bold text-emerald-800 ml-3">Karınca Türkiyem</h1>
         {/* ⬆️ BURASI ⬆️ */}
       </div>
