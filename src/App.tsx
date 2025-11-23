@@ -21,7 +21,7 @@ return (
   <img 
     src="/logo.png" 
     alt="Karınca Türkiyem" 
-    className="h-12 w-12 object-contain mr-3"
+    className="h-24 w-24 object-contain mr-4"
   />
   <h1 className="text-2xl font-bold text-emerald-800">Karınca Türkiyem</h1>
 </div>
