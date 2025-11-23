@@ -11,23 +11,19 @@ function App() {
     species.latinName.toLowerCase().includes(search.toLowerCase())
   );
 
-  return (
+return (
   <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-amber-50 to-green-50">
-      {/* Header */}
-      <header className="bg-white/80 backdrop-blur-sm shadow-sm border-b border-emerald-200">
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div className="flex items-center justify-between h-16">
-      <div className="flex items-center">
-        {/* ⬇️ BURASI ⬇️ */}
-        <div className="relative">
- <img src="/logo.png" alt="Karınca Türkiyem" className="h-10 w-10 mr-3" />
-<h1 className="text-2xl font-bold text-emerald-800">Karınca Türkiyem</h1>
-<h1 className="text-2xl font-bold text-emerald-800 ml-3">Karınca Türkiyem</h1>
-        {/* ⬆️ BURASI ⬆️ */}
+    {/* Header */}
+    <header className="bg-white/80 backdrop-blur-sm shadow-sm border-b border-emerald-200">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16">
+          <div className="flex items-center">
+            <img src="/logo.png" alt="Karınca Türkiyem" className="h-10 w-10 mr-3" />
+            <h1 className="text-2xl font-bold text-emerald-800">Karınca Türkiyem</h1>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</header>
+    </header>
 
       {/* Arama ve İçerik */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
