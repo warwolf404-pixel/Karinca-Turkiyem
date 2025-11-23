@@ -285,7 +285,7 @@ export const antSpecies = [
     difficulty: "Orta seviye - standart bakım gerektirir",
     specialNotes: "Holtz'un onuruna adlandırılmış. Orman ekosisteminde önemli rol oynar."
   },
-  {,
+  {
     id: 16,
     name: "Aphaenogaster Kervillei",
     latinName: "Aphaenogaster kervillei",
