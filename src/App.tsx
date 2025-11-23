@@ -18,15 +18,15 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
-              <div className="flex-shrink-0">
-                <img 
-                  src="/logo.png" 
-                  alt="Karınca Türkiyem" 
-                  className="h-24 w-24 object-contain"
-                />
-              </div>
-              <h1 className="text-2xl font-bold text-emerald-800 ml-4">Karınca Türkiyem</h1>
-            </div>
+  <div className="flex-shrink-0" style={{ width: '200px' }}>
+    <img 
+      src="/logo.png" 
+      alt="Karınca Türkiyem" 
+      className="w-full h-auto object-contain"
+    />
+  </div>
+  <h1 className="text-2xl font-bold text-emerald-800 ml-4">Karınca Türkiyem</h1>
+</div>
           </div>
         </div>
       </header>
