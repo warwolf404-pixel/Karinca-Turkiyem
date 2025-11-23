@@ -7370,4 +7370,4 @@ export const antSpecies = [
     "difficulty": "Orta.",
     "specialNotes": "Taksonomik olarak ayrımı zor olan bir türdür."
   }
-]   // <- SADECE BUNU YAZIN, ; YOK!
+] 
