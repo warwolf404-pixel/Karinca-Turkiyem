@@ -18,9 +18,13 @@ return (
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <img src="/logo.png" alt="Karınca Türkiyem" className="h-10 w-10 mr-3" />
-            <h1 className="text-2xl font-bold text-emerald-800">Karınca Türkiyem</h1>
-          </div>
+  <img 
+    src="/logo.png" 
+    alt="Karınca Türkiyem" 
+    className="h-12 w-12 object-contain mr-3"
+  />
+  <h1 className="text-2xl font-bold text-emerald-800">Karınca Türkiyem</h1>
+</div>
         </div>
       </div>
     </header>
