@@ -3,7 +3,7 @@ export const antSpecies = [
     id: 1,
     name: "Aenictus Rhodiensis",
     latinName: "Aenictus rhodiensis",
-    image:"https://www.antwiki.org/w/images/4/4d/Fig._3a_Jaitrong_and_Ryangsittichai_2018_Aenictus_samungi_worker_body_in_profile.png",
+    image:"https://www.researchgate.net/profile/Lech-Borowiec/publication/365703788/figure/fig2/AS:11431281100379259@1669358664029/Aenictus-rhodiensis-Menozzi-1-worker-dorsal-2-worker-lateral-3-worker-head.jpg",
     description: "Asker karıncaları (Aenictus cinsi) grubuna ait bu oldukça agresif tür, sürekli göç halinde yaşayan profesyonel avcılardır. Kolonileri 2.000-10.000 işçiden oluşan dev sürüler halinde hareket ederler. Diğer böcekler, arthropodlar ve hatta küçük omurgasızlar ile beslenirler. Yuvaları geçicidir ve her 1-2 haftada bir yer değiştirirler. Bu tür özellikle sıcak ve nemli Akdeniz ikliminde aktif olup, gündüz saatlerinde organize av partileri düzenlerler. Avlarını etkisiz hale getirmek için güçlü çenelerini kullanırlar.",
     habitat: "Sıcak iklimler, tropikal ormanlar, nemli bölgeler, orman tabanı, Akdeniz makilikleri",
     size: "İşçi: 3-4 mm, Kraliçe: 6-7 mm, Erkek: 5-6 mm",
